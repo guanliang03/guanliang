@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liew Guan Liang - Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            margin-top: 25px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Lists (Education, Achievements) */
+        ul.simple-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.simple-list li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+        }
+
+        /* Skills Tag Cloud */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2980b9;
+        }
+
+        .card .tech-stack {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Liew Guan Liang</h1>
+            <p>Software Engineering Student & System Analyst</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a third-year Software Engineering student majoring in Information Systems at Universiti Kebangsaan Malaysia. I have hands-on experience in Python, Java, and SQL. I have completed various academic projects involving software development and data handling, and I am eager to apply these technical skills in real-world environments.</p>
+    </section>
+
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <ul class="simple-list">
+            <li>
+                <strong>Bachelor of Software Engineering (B.S.E)</strong><br>
+                Universiti Kebangsaan Malaysia (2023 - Present) <br>
+                <em>GPA: 3.77 / 4.0</em>
+            </li>
+            <li>
+                <strong>STPM Science Stream</strong><br>
+                SMK Green Road (2020 - 2022)
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Kotlin</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Android Dev</span>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Key Projects</h2>
+        <div class="project-grid">
+            
+            <div class="card">
+                <h3>Badminton Court Booking App</h3>
+                <p>A Java-based application allowing users to select time slots, book courts, and view history. Features include a membership system for discounts and cancellation policies.</p>
+                <p class="tech-stack">Tech: Java, Object-Oriented Programming</p>
+            </div>
+
+            <div class="card">
+                <h3>Inventory Management App</h3>
+                <p>Built an Android app to manage product inventory with low-stock alerts and categorization. Implemented Architecture Components including ViewModel, Flow, and StateFlow.</p>
+                <p class="tech-stack">Tech: Kotlin, SQLite, Android Studio</p>
+            </div>
+
+            <div class="card">
+                <h3>Tender Prediction System</h3>
+                <p>A university project designed to analyze and predict tender outcomes utilizing database management and predictive logic.</p>
+                <p class="tech-stack">Tech: Data Analytics, System Design</p>
+            </div>
+
+            <div class="card">
+                <h3>Road Safety App</h3>
+                <p>An application focused on hazard detection integrating AI to improve road safety standards.</p>
+                <p class="tech-stack">Tech: AI Integration, Mobile Dev</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="achievements" class="container">
+        <h2>Achievements & Certifications</h2>
+        <ul class="simple-list">
+            <li><strong>Huawei ICT Competition Malaysia 2024/2025:</strong> Won Third Prize in the Computing Track (National Level).</li>
+            <li><strong>Codenection 2024:</strong> Ranked in the Top 40 out of over 200 teams.</li>
+            <li><strong>Certifications:</strong> Google UX Design, Alibaba Cloud Certified Associate, CISCO Introduction to Data Science.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> liewguanliang@hotmail.com</p>
+        <p><strong>Phone:</strong> +60109785345</p>
+        <p><strong>LinkedIn:</strong> guanliang03</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Liew Guan Liang. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
