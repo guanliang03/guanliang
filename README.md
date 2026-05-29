@@ -68,13 +68,13 @@ You can showcase projects such as:
 Clone the repository:
 
 ```bash
-git clone https://github.com/guanliang03/your-repository-name.git
+git clone https://github.com/guanliang03/guanliang.git
 ```
 
 Navigate into the project folder:
 
 ```bash
-cd your-repository-name
+cd guanliang
 ```
 
 Install dependencies (if applicable):
@@ -117,7 +117,6 @@ project-root/
 
 ## Future Improvements
 
-* Add dark mode
 * Add blog section
 * Integrate backend services
 * Improve animations and UI/UX
