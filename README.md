@@ -4,7 +4,7 @@ Welcome to my personal website repository. This website showcases my background,
 
 ## About Me
 
-Hi, I'm Guan Liang Liew, a Software Engineering student passionate about:
+Hi, I'm Liew Guan Liang, a Software Engineering student passionate about:
 
 * Software Development
 * Data Analytics
@@ -25,27 +25,9 @@ I enjoy building projects, exploring new technologies, and gaining real-world ex
 
 ## Technologies Used
 
-Depending on your implementation, update this section accordingly.
-
-Example:
-
 * HTML5
 * CSS3
 * JavaScript
-* React.js
-* Tailwind CSS
-* Bootstrap
-* Node.js
-
-## Projects Highlighted
-
-You can showcase projects such as:
-
-* IoT competition project using Arduino
-* Software engineering academic projects
-* Data analytics or cybersecurity projects
-* Personal web applications
-* Competition submissions
 
 ## Achievements
 
@@ -56,7 +38,7 @@ You can showcase projects such as:
 
 ## Leadership & Activities
 
-* External Affairs Officer for Hostel Club
+* External Affairs Officer for KPZ Hostel Club
 * Instrument Master in Orchestra
 * Technical Officer in Concert Orchestra
 * Former Vice President of St. John Ambulance
