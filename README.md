@@ -45,56 +45,51 @@ I enjoy building projects, exploring new technologies, and gaining real-world ex
 * Former Vice President of Leo Club
 * Head of Logistics Prefect
 
-## Installation
+## Installation & Running Locally
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/guanliang03/guanliang.git
-```
-
-Navigate into the project folder:
-
-```bash
 cd guanliang
 ```
 
-Install dependencies (if applicable):
+Since this is a static HTML/CSS/JS website, you can view it directly by opening `index.html` in your web browser.
 
+Alternatively, you can serve the project locally using a simple HTTP server:
+
+Using Node.js/npx:
 ```bash
-npm install
+npx http-server
 ```
 
-Run the development server:
-
+Using Python:
 ```bash
-npm run dev
+python -m http.server
 ```
 
 ## Deployment
 
-This website can be deployed using:
+This website can be easily deployed using:
 
 * GitHub Pages
 * Vercel
 * Netlify
-* Firebase Hosting
 
 ## Folder Structure
 
-```bash
-project-root/
+```text
+guanliang/
 │
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── styles/
+├── cnu/                 # Chonnam National University (South Korea) Exchange Media
+├── kust/                # Kunming University of Science and Technology (China) Summer Program Media
 │
-├── package.json
-├── README.md
-└── vite.config.js
+├── index.html           # Home page / main portfolio structure
+├── projects.html        # Detailed showcase of key projects
+├── exchange.html        # Details & photos of global exchange experiences
+├── styles.css           # Custom CSS stylesheet (Modern dark-themed layout)
+├── profile.png          # Portfolio profile picture
+└── README.md            # Project documentation
 ```
 
 ## Future Improvements
@@ -108,11 +103,10 @@ project-root/
 
 You can connect with me through:
 
-* LinkedIn
-* GitHub
-* Email
-
-(Update your actual links here.)
+* **Email:** [liewguanliang@hotmail.com](mailto:liewguanliang@hotmail.com)
+* **LinkedIn:** [linkedin.com/in/guanliang03](https://www.linkedin.com/in/guanliang03)
+* **Instagram:** [@guanliang__](https://instagram.com/guanliang__)
+* **GitHub:** [github.com/guanliang03](https://github.com/guanliang03)
 
 ## License
 
