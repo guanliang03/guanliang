@@ -1,258 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liew Guan Liang - Portfolio</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+    <title>Liew Guan Liang — Software Engineer</title>
+    <meta name="description" content="Portfolio of Liew Guan Liang — Software Engineering student at UKM, Petronas Scholar, and developer with experience in Python, Java, Kotlin, and more.">
 
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Container */
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 5px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        nav {
-            margin-top: 25px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Sections */
-        section {
-            margin: 30px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-
-        /* Lists (Education, Achievements) */
-        ul.simple-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul.simple-list li {
-            margin-bottom: 10px;
-            padding-left: 15px;
-            border-left: 3px solid #3498db;
-        }
-
-        /* Skills Tag Cloud */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-tag {
-            background: #ecf0f1;
-            color: #2c3e50;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        /* Project Grid */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #2980b9;
-        }
-
-        .card .tech-stack {
-            font-size: 0.85rem;
-            color: #7f8c8d;
-            margin-top: 10px;
-            font-style: italic;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #2c3e50;
-            color: #fff;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #bdc3c7;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
     <header>
-        <div class="container">
-            <h1>Liew Guan Liang</h1>
-            <p>Software Engineering Student & System Analyst</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <div class="big-text-bg">PORTFOLIO</div>
+        <div class="big-text-overlay">PORTFOLIO</div>
+
+        <div class="profile-img-wrapper">
+            <img src="profile.png" alt="Liew Guan Liang" class="profile-img">
         </div>
+
+        <div class="header-bottom-left">
+            <h1>Liew Guan Liang</h1>
+        </div>
+
+        <div class="scroll-indicator">Scroll</div>
     </header>
 
+    <nav id="main-nav">
+        <a href="#about" id="nav-about">About</a>
+        <a href="#education" id="nav-education">Education</a>
+        <a href="#skills" id="nav-skills">Skills</a>
+        <a href="#projects" id="nav-projects">Projects</a>
+        <a href="#achievements" id="nav-achievements">Awards</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+
+    <!-- ═══ ABOUT ═══════════════════════════════════ -->
     <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I am a third-year Software Engineering student majoring in Information Systems at Universiti Kebangsaan Malaysia. I have hands-on experience in Python, Java, and SQL. I have completed various academic projects involving software development and data handling, and I am eager to apply these technical skills in real-world environments.</p>
+        <h2 class="reveal">
+            <span class="section-num">01</span>
+            About Me
+        </h2>
+
+        <div class="about-grid">
+            <div class="about-text reveal reveal-delay-1">
+                <p>I am a third-year Software Engineering student majoring in Information Systems at Universiti Kebangsaan Malaysia. As a <strong style="color: var(--text-primary);">Petronas Scholar (PESP)</strong>, I have hands-on experience in Python, Java, Kotlin, and SQL — building everything from Android apps to data analytics systems.</p>
+                <p>I'm passionate about crafting clean software and exploring how technology can solve real-world problems. Always eager to learn, collaborate, and grow.</p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card reveal reveal-delay-2">
+                    <div class="stat-num">3.77</div>
+                    <div class="stat-label">Current GPA</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-3">
+                    <div class="stat-num">4+</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-4">
+                    <div class="stat-num">2</div>
+                    <div class="stat-label">Countries Studied</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-5">
+                    <div class="stat-num">8+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ═══ EDUCATION ════════════════════════════════ -->
     <section id="education" class="container">
-        <h2>Education</h2>
-        <ul class="simple-list">
-            <li>
-                <strong>Bachelor of Software Engineering (B.S.E)</strong><br>
-                Universiti Kebangsaan Malaysia (2023 - Present) <br>
+        <h2 class="reveal">
+            <span class="section-num">02</span>
+            Education
+        </h2>
+
+        <div class="timeline">
+            <div class="timeline-item reveal reveal-delay-1">
+                <div class="item-header">
+                    <strong>Bachelor of Software Engineering (B.S.E)</strong>
+                    <div class="item-meta">Universiti Kebangsaan Malaysia &nbsp;·&nbsp; 2023 – Present</div>
+                </div>
                 <em>GPA: 3.77 / 4.0</em>
-            </li>
-            <li>
-                <strong>STPM Science Stream</strong><br>
-                SMK Green Road (2020 - 2022)
-            </li>
-        </ul>
+                <div style="margin-top: 12px;">
+                    <span class="badge"><i class="fas fa-award" style="font-size:0.7rem;"></i> Petronas Scholar (PESP)</span>
+                </div>
+            </div>
+
+            <div class="timeline-item exchange-link-item reveal reveal-delay-2">
+                <div class="item-header">
+                    <strong>Global Experience Program</strong>
+                    <div class="item-meta">South Korea &amp; China &nbsp;·&nbsp; 2025</div>
+                </div>
+                <p>Student exchange at Chonnam National University (South Korea) and a summer program at Kunming University of Science and Technology (China).</p>
+                <div style="margin-top: 8px;">
+                    <span class="badge gold"><i class="fas fa-star" style="font-size:0.7rem;"></i> AIMS Scholar</span>
+                    <span class="badge gold"><i class="fas fa-star" style="font-size:0.7rem;"></i> Government Sponsored</span>
+                </div>
+                <a href="exchange.html">View Exchange &amp; Summer Programs <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="timeline-item reveal reveal-delay-3">
+                <div class="item-header">
+                    <strong>STPM Science Stream</strong>
+                    <div class="item-meta">SMK Green Road &nbsp;·&nbsp; 2020 – 2022</div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ═══ SKILLS ════════════════════════════════════ -->
     <section id="skills" class="container">
-        <h2>Technical Skills</h2>
+        <h2 class="reveal">
+            <span class="section-num">03</span>
+            Technical Skills
+        </h2>
+
         <div class="skills-container">
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C / C++</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Kotlin</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Android Dev</span>
+            <div class="skill-icon-box reveal reveal-delay-1" data-skill="java" title="Java">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-2" data-skill="python" title="Python">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-3" data-skill="js" title="JavaScript">
+                <i class="fab fa-js"></i>
+                <span>JS</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-4" data-skill="sql" title="SQL">
+                <i class="fas fa-database"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-1" data-skill="c" title="C / C++">
+                <i class="fas fa-code"></i>
+                <span>C / C++</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-2" data-skill="kotlin" title="Kotlin">
+                <i class="fab fa-android"></i>
+                <span>Kotlin</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-3" data-skill="git" title="Git">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-icon-box reveal reveal-delay-4" data-skill="docker" title="Docker">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+            </div>
         </div>
     </section>
 
+    <!-- ═══ PROJECTS ══════════════════════════════════ -->
     <section id="projects" class="container">
-        <h2>Key Projects</h2>
-        <div class="project-grid">
-            
-            <div class="card">
-                <h3>Badminton Court Booking App</h3>
-                <p>A Java-based application allowing users to select time slots, book courts, and view history. Features include a membership system for discounts and cancellation policies.</p>
-                <p class="tech-stack">Tech: Java, Object-Oriented Programming</p>
-            </div>
+        <h2 class="reveal">
+            <span class="section-num">04</span>
+            Key Projects
+        </h2>
 
-            <div class="card">
-                <h3>Inventory Management App</h3>
-                <p>Built an Android app to manage product inventory with low-stock alerts and categorization. Implemented Architecture Components including ViewModel, Flow, and StateFlow.</p>
-                <p class="tech-stack">Tech: Kotlin, SQLite, Android Studio</p>
-            </div>
+        <div class="projects-intro reveal">
+            <p>I have worked on various software engineering projects ranging from mobile apps to data analytics systems. Explore my detailed portfolio to see the features and tech stacks used.</p>
+            <a href="projects.html" class="btn-outline" id="view-projects-btn">
+                <span>View All Projects</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
 
-            <div class="card">
-                <h3>Tender Prediction System</h3>
-                <p>A university project designed to analyze and predict tender outcomes utilizing database management and predictive logic.</p>
-                <p class="tech-stack">Tech: Data Analytics, System Design</p>
+        <div class="project-teasers">
+            <div class="teaser-card reveal reveal-delay-1">
+                <i class="fas fa-table-tennis teaser-icon"></i>
+                <h4>Badminton Court Booking</h4>
+                <p>Java-based booking system with membership & receipt generation.</p>
             </div>
-
-            <div class="card">
-                <h3>Road Safety App</h3>
-                <p>An application focused on hazard detection integrating AI to improve road safety standards.</p>
-                <p class="tech-stack">Tech: AI Integration, Mobile Dev</p>
+            <div class="teaser-card reveal reveal-delay-2">
+                <i class="fas fa-boxes-stacked teaser-icon"></i>
+                <h4>Inventory Management App</h4>
+                <p>Android app with barcode scanning & real-time stock visualizations.</p>
             </div>
-
+            <div class="teaser-card reveal reveal-delay-3">
+                <i class="fas fa-chart-line teaser-icon"></i>
+                <h4>Tender Prediction System</h4>
+                <p>Collab with Gaia Science — AI dashboard for high-prob tenders, resource planning &amp; staff monitoring.</p>
+            </div>
+            <div class="teaser-card reveal reveal-delay-4">
+                <i class="fas fa-utensils teaser-icon"></i>
+                <h4>Restaurant Management System</h4>
+                <p>AI analytics dashboard for restaurant ops, powered by Firebase and real-time data.</p>
+            </div>
         </div>
     </section>
 
+    <!-- ═══ ACHIEVEMENTS ══════════════════════════════ -->
     <section id="achievements" class="container">
-        <h2>Achievements & Certifications</h2>
-        <ul class="simple-list">
-            <li><strong>Huawei ICT Competition Malaysia 2024/2025:</strong> Won Third Prize in the Computing Track (National Level).</li>
-            <li><strong>Codenection 2024:</strong> Ranked in the Top 40 out of over 200 teams.</li>
-            <li><strong>Certifications:</strong> Google UX Design, Alibaba Cloud Certified Associate, CISCO Introduction to Data Science.</li>
-        </ul>
+        <h2 class="reveal">
+            <span class="section-num">05</span>
+            Achievements
+        </h2>
+
+        <div class="achievement-list">
+            <div class="achievement-item reveal reveal-delay-1">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-content">
+                    <strong>Huawei ICT Competition Malaysia 2024/2025</strong>
+                    <p>Won <span style="color: var(--accent-warm); font-weight: 600;">Third Prize</span> in the Computing Track at the National Level — competing against top student teams across Malaysia.</p>
+                </div>
+            </div>
+
+            <div class="achievement-item reveal reveal-delay-2">
+                <div class="achievement-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <div class="achievement-content">
+                    <strong>Codenection 2024</strong>
+                    <p>Ranked in the <span style="color: var(--accent-warm); font-weight: 600;">Top 40</span> out of over 200 teams in this national competitive programming competition.</p>
+                </div>
+            </div>
+
+            <div class="achievement-item reveal reveal-delay-3">
+                <div class="achievement-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="achievement-content">
+                    <strong>Professional Certifications</strong>
+                    <p>Google UX Design &nbsp;·&nbsp; Alibaba Cloud Certified Associate &nbsp;·&nbsp; CISCO Introduction to Data Science</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ═══ CONTACT ═══════════════════════════════════ -->
     <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> liewguanliang@hotmail.com</p>
-        <p><strong>Phone:</strong> +60109785345</p>
-        <p><strong>LinkedIn:</strong> guanliang03</p>
+        <h2 class="reveal">
+            <span class="section-num">06</span>
+            Contact
+        </h2>
+
+        <div class="contact-wrapper reveal">
+            <p class="contact-label">Let's connect</p>
+            <div class="contact-links">
+                <a href="mailto:liewguanliang@hotmail.com" class="contact-item" id="contact-email" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guanliang03" target="_blank" class="contact-item" id="contact-linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/guanliang__" target="_blank" class="contact-item" id="contact-instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2026 Liew Guan Liang. All rights reserved.</p>
     </footer>
 
+    <script>
+        // ─── Scroll Progress Bar ───────────────────
+        const progressBar = document.getElementById('scroll-progress');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            progressBar.style.width = progress + '%';
+        });
+
+        // ─── Cursor Glow ──────────────────────────
+        const cursorGlow = document.getElementById('cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top  = e.clientY + 'px';
+        });
+        document.addEventListener('mouseleave', () => { cursorGlow.style.opacity = '0'; });
+        document.addEventListener('mouseenter', () => { cursorGlow.style.opacity = '1'; });
+
+        // ─── Scroll Spy ───────────────────────────
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { root: null, rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+        sections.forEach(section => observer.observe(section));
+
+        // ─── Scroll Reveal ────────────────────────
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // ─── Sticky Nav Shadow on Scroll ──────────
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                nav.style.boxShadow = '0 8px 40px rgba(0,0,0,0.8)';
+            } else {
+                nav.style.boxShadow = '0 8px 40px rgba(0,0,0,0.6)';
+            }
+        });
+
+        // ─── Skill box stagger animation ──────────
+        const skillBoxes = document.querySelectorAll('.skill-icon-box');
+        skillBoxes.forEach((box, i) => {
+            box.style.transitionDelay = `${i * 0.05}s`;
+        });
+    </script>
+
 </body>
+
 </html>
