@@ -106,7 +106,6 @@ You can connect with me through:
 
 * **Email:** [liewguanliang@hotmail.com](mailto:liewguanliang@hotmail.com)
 * **LinkedIn:** [linkedin.com/in/guanliang03](https://www.linkedin.com/in/guanliang03)
-* **Instagram:** [@guanliang__](https://instagram.com/guanliang__)
 * **GitHub:** [github.com/guanliang03](https://github.com/guanliang03)
 
 ## License
