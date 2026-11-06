@@ -2,6 +2,37 @@
 
 Welcome to my personal website repository. This website showcases my background, projects, achievements, and experiences in software engineering.
 
+## Installation & Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/guanliang03/guanliang.git
+cd guanliang
+```
+
+Since this is a static HTML/CSS/JS website, you can view it directly by opening `index.html` in your web browser.
+
+Alternatively, you can serve the project locally using a simple HTTP server:
+
+Using Node.js/npx:
+```bash
+npx http-server
+```
+
+Using Python:
+```bash
+python -m http.server
+```
+
+## Deployment
+
+This website can be easily deployed using:
+
+* GitHub Pages
+* Vercel
+* Netlify
+
 ## About Me
 
 Hi, I'm Liew Guan Liang, a Software Engineering student passionate about:
@@ -45,36 +76,6 @@ I enjoy building projects, exploring new technologies, and gaining real-world ex
 * Former Vice President of Leo Club
 * Head of Logistics Prefect
 
-## Installation & Running Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/guanliang03/guanliang.git
-cd guanliang
-```
-
-Since this is a static HTML/CSS/JS website, you can view it directly by opening `index.html` in your web browser.
-
-Alternatively, you can serve the project locally using a simple HTTP server:
-
-Using Node.js/npx:
-```bash
-npx http-server
-```
-
-Using Python:
-```bash
-python -m http.server
-```
-
-## Deployment
-
-This website can be easily deployed using:
-
-* GitHub Pages
-* Vercel
-* Netlify
 
 ## Folder Structure
 
